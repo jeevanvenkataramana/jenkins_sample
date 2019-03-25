@@ -15,11 +15,10 @@ stages {
         }
     }
 
-    stage('credentials') {
+    stage('TF Plan') {
         steps {
-	sh 'sudo apt-get install jq'
-	// sh 'ssh-keygen -f ubuntu'
-	sh 'source .env'
+	sh 'terraform init'
+	sh 'terraform plan -out myplan'
         }
 
     }
