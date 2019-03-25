@@ -14,11 +14,8 @@ stages{
  stage(‘infrastructure’) {
  
  steps {
- dir(‘dev’)
- {
- sh ‘terraform init’
+  sh ‘terraform init’
  sh ‘terraform plan’
- // sh ‘terraform destroy -auto-approve’
  sh ‘terraform apply’
  }
  
