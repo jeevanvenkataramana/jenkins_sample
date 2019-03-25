@@ -1,6 +1,7 @@
 pipeline {
  agent any
  
+stages{
  
  stage(‘path’) {
  steps {
@@ -25,7 +26,7 @@ pipeline {
  }
  }
  
- 
+} 
  
  }
 
