@@ -2,7 +2,7 @@ pipeline {
  agent any
  
  
- stage(‘Set Terraform path’) {
+ stage(‘path’) {
  steps {
  
  sh ‘source .env’
