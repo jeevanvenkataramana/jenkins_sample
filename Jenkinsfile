@@ -18,7 +18,7 @@ stages {
     stage('credentials') {
         steps {
 	sh 'sudo apt-get install jq'
-	sh 'ssh-keygen -f ubuntu -t rsa -N '''
+	sh 'ssh-keygen -f ubuntu -t rsa -N '12345''
 	sh 'source .env'
         }
 
