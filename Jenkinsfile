@@ -10,7 +10,7 @@ pipeline {
  }
  }
  
- stage(‘Provision infrastructure’) {
+ stage(‘infrastructure’) {
  
  steps {
  dir(‘dev’)
